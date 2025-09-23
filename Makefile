@@ -1,6 +1,6 @@
 # Extremely simple HTTP server that responds on port 8000 with a hello message in HTML format.
 
-DOCKER_HUB_ID ?= tfine
+DOCKER_HUB_ID ?= openhorizon
 MATCH ?= "Hello"
 TIME_OUT ?= 30
 
@@ -11,7 +11,7 @@ export SERVICE_NAME ?= edgefl
 PATTERN_NAME ?= pattern-$(SERVICE_NAME)
 DEPLOYMENT_POLICY_NAME ?= deployment-policy-$(SERVICE_NAME)
 NODE_POLICY_NAME ?= node-policy-$(SERVICE_NAME)
-export SERVICE_VERSION ?= 0.3
+export SERVICE_VERSION ?= 1.0.1
 export SERVICE_CONTAINER := $(DOCKER_HUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION)
 ARCH ?= amd64
 

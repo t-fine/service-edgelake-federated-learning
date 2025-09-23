@@ -18,6 +18,50 @@
                 "AGG_NAME": "agg",
                 "PORT": "8080"
             }
+        },
+        {
+            "org": "myorg",
+            "url": "service-edgelake-operator",
+            "variables": {
+                "NODE_TYPE": "operator",
+                "NODE_NAME": "exchange-operator",
+                "COMPANY_NAME": "New Company",
+                "ANYLOG_SERVER_PORT": 32148,
+                "ANYLOG_REST_PORT": 32149,
+                "ANYLOG_BROKER_PORT": 32150,
+                "TCP_BIND": true,
+                "DB_TYPE": "sqlite",
+                "DB_USER": "postgres",
+                "DB_PASSWD": "postgres4Anylog!",
+                "DB_IP": "127.0.0.1",
+                "DB_PORT": 5432,
+                "NOSQL_TYPE": "mongo",
+                "NOSQL_IP": "127.0.0.1",
+                "NOSQL_PORT": 27017,
+                "BLOBS_REUSE": true,
+                "BLOCKCHAIN_SYNC": "30 second",
+                "BLOCKCHAIN_SOURCE": "master",
+                "LEDGER_CONN": "192.168.56.10:32048",
+                "CLUSTER_NAME": "new-cluster",
+                "DEFAULT_DBMS": "new_company",
+                "AGGREGATION_TIME_COLUMN": "insert_timestamp",
+                "AGGREGATION_VALUE_COLUMN": "value",
+                "ENABLE_MQTT": true,
+                "MQTT_BROKER": "139.144.46.246",
+                "MQTT_PORT": 1883,
+                "MQTT_USER": "anyloguser",
+                "MQTT_PASSWD": "mqtt4AnyLog!",
+                "MSG_TOPIC": "anylog-demo",
+                "MSG_DBMS": "new_company",
+                "MSG_TABLE": "bring [table]",
+                "MSG_TIMESTAMP_COLUMN": "now",
+                "MSG_VALUE_COLUMN": "bring [value]",
+                "MSG_VALUE_COLUMN_TYPE": "float",
+                "MONITOR_NODES": true,
+                "SYSLOG_MONITORING": true,
+                "NIC_TYPE": "enp0s8",
+                "INIT_TYPE": "prod"
+            }
         }
     ]
 }
